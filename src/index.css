@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Spline+Sans+Mono:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #9F9FAD;
+  --color-highlight: #B0FF92;
+  --color-mint: #8FFFD1;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-Spline_Sans_Mono: "Spline Sans Mono", monospace;
+  --font-serif-display: "Fraunces", serif;
+  
+  --animate-marquee: marquee 28s linear infinite;
+  --animate-marquee-reverse: marquee-reverse 28s linear infinite;
+  --animate-marquee-fast: marquee 18s linear infinite;
+
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+
+  @keyframes marquee-reverse {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0%); }
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Glassmorphism utility card */
+.glass-panel {
+  background: rgba(25, 25, 25, 0.6);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(159, 159, 173, 0.1);
+  border-top: 1px solid rgba(159, 159, 173, 0.2);
+}
+
+/* Colophon dynamic background line */
+.colophon-gradient {
+  background-image: linear-gradient(270deg, rgba(159, 159, 173, 0) 0%, rgba(159, 159, 173, 0.25) 48.68%, rgba(159, 159, 173, 0) 100%);
+}
+
+body {
+  background-color: #000000;
+  color: #9F9FAD;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom transitions and animations */
+.transition-all-custom {
+  transition: all 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Custom glow effect */
+.hover-glow:hover {
+  box-shadow: 0 0 30px rgba(176, 255, 146, 0.1);
+  border-color: rgba(176, 255, 146, 0.25);
+}
