@@ -61,7 +61,7 @@ const projects = [
     description: "A client relationship management platform focused on organizing customer data, project workflows, communication, and business operations.",
     techStack: ["React", "Django", "PostgreSQL", "Tailwind CSS", "REST API"],
     image: clientsyncImg,
-    demoLink: "https://client-sync-ddcrm.vercel.app",
+    demoLink: "https://client-sync-kappa.vercel.app/",
     githubLink: "https://github.com/deepakdube1102",
   },
   {
